@@ -2,7 +2,7 @@
 require('dotenv').config();
 const axios = require('axios');
 const yargs = require('yargs');
-const chalk = require('chalk');
+const chalk = await import('chalk');
 
 const API_KEY = process.env.TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3/movie';
